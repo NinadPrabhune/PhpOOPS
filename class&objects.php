@@ -14,7 +14,7 @@ class Calculation{
     }  
 }
 $cal1= new Calculation();        // creating object
-$cal1->a=10;
+$cal1->a=100;
 $cal1->b=120;
 echo $cal1->Sum()."<br>";
 echo $cal1->Sub()."<br><br>";
