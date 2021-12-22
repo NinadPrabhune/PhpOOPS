@@ -29,6 +29,6 @@ function getDatesFromRange($start, $end, $format = 'Y-m-d') {
 
 }
 
-$Date = getDatesFromRange('2010-10-01', '2010-10-05');
+$Date = getDatesFromRange('2021-12-22', '2022-03-17');
 
 var_dump($Date);
