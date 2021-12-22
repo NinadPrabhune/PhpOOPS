@@ -1,4 +1,15 @@
 <?php
+
+// Create New Class From Base / Parent Class is called Inheritance
+
+// Newly created class called as Derived / Child Class
+
+// The child class will inherit all the public and protected properties and methods from the parent class. In addition, it can have its own properties and methods.
+
+// inherited class is defined by using the extends keyword.
+
+
+
 class Employee
 {
     public $name; //prorerties $name global scope
@@ -58,3 +69,8 @@ $e1->info();
 
 $m1 = new Manager("Krishna", 35, 150000);
 $m1->info();
+
+
+
+
+

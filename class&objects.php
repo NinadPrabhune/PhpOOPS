@@ -1,4 +1,16 @@
 <?php
+
+// A class is a template for objects, and an object is an instance of class.
+
+// In a class, variables are called properties and functions are called methods!
+
+// Objects of a class is created using the new keyword.
+
+// The $this keyword refers to the current object, and is only available inside methods.
+
+// You can use the instanceof keyword to check if an object belongs to a specific class:
+
+
 class Calculation
 {
 
@@ -27,3 +39,9 @@ $cal2->a = 1110;
 $cal2->b = 12890;
 echo $cal2->Sum() . "<br>";
 echo $cal2->Sub() . "<br>";
+
+
+$cal123='';
+
+var_dump($cal1 instanceof Calculation);
+var_dump($cal123 instanceof Calculation);
