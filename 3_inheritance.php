@@ -8,8 +8,11 @@
 
 // inherited class is defined by using the extends keyword.
 
+// Inheritance has three types, single, multiple and multilevel Inheritance.
 
+// PHP supports only single inheritance, where only one class can be derived from single parent class.
 
+// We can simulate multiple inheritance by using interfaces.
 class Employee
 {
     public $name; //prorerties $name global scope

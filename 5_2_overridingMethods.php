@@ -2,7 +2,7 @@
 
 // Overriding Methods :
 // Same name of method on both classes base or derived class.
-
+// Inherited methods can be overridden by redefining the methods (use the same name) in the child class.
 
 
 class base {
