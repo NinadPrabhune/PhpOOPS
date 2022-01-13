@@ -14,6 +14,7 @@ rule
 
 <?php
 
+
 require "12_namespace_test1.php";
 
 require "12_namespace_test2.php";
