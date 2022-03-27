@@ -18,6 +18,7 @@ rule
 3) access obj with namespace name \ class name. -->
 
 
+
 <?php
 
 require "12_namespace_test1.php";
