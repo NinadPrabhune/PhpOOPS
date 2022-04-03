@@ -31,6 +31,7 @@ function wow(){
 
 
 
+
 $obj = new namespace1\product();
 
 $obj = new namespace2\product();
