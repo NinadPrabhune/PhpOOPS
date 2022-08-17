@@ -1,14 +1,8 @@
 <?php
 
-
-
-
 // Rule
 
 // require class name same as file name
-
-
-
 // require "classes/first.php";
 // require "classes/second.php";
 
@@ -19,11 +13,8 @@ function __autoload($class){
 
 }
 
-
-
 $test = new first();
 
 $test = new second();
-
 ?>
 
