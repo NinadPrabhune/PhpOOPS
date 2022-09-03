@@ -19,38 +19,23 @@ class student{
     private function setName($fname,$lname){
         echo $this->first_name=$fname;
         echo $this->last_name=$lname;
-    }
-  
+    } 
     
-
-    public function __Call($method, $args){
-
-        
+    public function __Call($method, $args){       
 
         if(method_exists($this , $method)){
-
             call_user_func_array([$this,$method],$args);
-
         }else{
-
             echo "This is Private Or Non Existing Method - '".$method."' <br>";
-
         }        
     }   
 }
    
    $test = new student();
 
-   $test->setName("Ninad", "Prabhune");
-  
+   $test->setName("Ninad", "Prabhune");  
     echo "<pre>";
-
     print_r($test);
-
     echo "</pre>";
-
-
-
-
 
 ?>
