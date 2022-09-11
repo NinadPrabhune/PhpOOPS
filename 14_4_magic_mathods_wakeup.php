@@ -1,7 +1,9 @@
 <!-- 
-   sleep initilized before serialize function
+   sleep initilized before unserialize function
 
     sleep used to return limited property to array
+
+    wakeup used for dc connection
  -->
 
 <?php
@@ -20,16 +22,17 @@ class student
       $this->last_name = $lname;
    }
 
-   public function __sleep()
+   public function __wakeup()
    {
-      return array("first_name","last_name");
+      echo "This is wakeup Methode ";
    } 
 }
 
 $test = new student();
 $test->setName("Ninad", "Prabhune");
 $srl=serialize($test);
-var_dump($srl);
+$uns=unserialize($srl);
+var_dump($uns);
 
 
 ?>
