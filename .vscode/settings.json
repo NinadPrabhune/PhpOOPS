@@ -1,6 +1,5 @@
 {
-    "printcode.fontSize": 12,
+    "printcode.fontSize": 10,
     "printcode.lineNumbers": "on",
-    "editor.minimap.maxColumn": 140,
-    "editor.fontSize": 12
+    "editor.minimap.maxColumn": 140,    
 }
