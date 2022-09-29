@@ -48,9 +48,13 @@ class Manager extends Employee
     public $PhoneAllounce = 10000;
     public $TotalSalary;
 
-    public function __construct()
+    public function __construct($n, $a, $s)
     {
         echo "Manager Constructor";
+
+        $this->name = $n;
+        $this->age = $a;
+        $this->salary = $s;
 
     }
 

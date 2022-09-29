@@ -11,13 +11,14 @@ PHP supports only single inheritance, where only one class can be derived from s
 
 We can simulate multiple inheritance by using interfaces. -->
 
-<!-- interfaces used for security Perpode -->
+<!-- interfaces used for security Perpose -->
 
 
 <!-- Rules of interfaces
 
 - Class replaed with Interface Keyword.
 - we canot declared properties in interfaces.
+- we canot declared __constructor in interfaces.
 - we canot create Object of interfaces.
 - we have to declared Abstract Methods.
     -(like we declared Method but cannot implement in Interfases.)

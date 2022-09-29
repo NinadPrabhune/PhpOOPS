@@ -56,6 +56,8 @@ $test1->calc(10,20);
 // inherit in library Department
 // inherit in Fee Department
 
+// bank IdProff Function
+
 
 
 
