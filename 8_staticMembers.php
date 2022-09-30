@@ -9,7 +9,7 @@
 
 Rules
     -   static keyword is used to declare properties and methods.
-    -   using scope resolution operator (::) we can access properties and methods  
+    -   using scope resolution operator (::) we can access properties and methods directely ( without creating object )
     -   we cannot use this keyword, we use "self" keyword.
     -   if all properties and methods is static then we call this Class as Static Class.
     -   in inheritance for accessing properties and methods of parent class we us "Parent" Keyword.
@@ -22,6 +22,7 @@ Rules
 - use in class self keyword
 - use in inherited class parent keyword
 - main benefit we not creating object 
+- in real life we want to call function without calling Constructor OR Destructor then static keyword is Used
 
 -->
 
