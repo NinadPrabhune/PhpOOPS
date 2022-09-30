@@ -37,10 +37,10 @@ class base
         echo self::$name;
     }
 
-    // public function __construct($n)
-    // {
-    //     self::$name = $n;
-    // }
+    public function __construct($n)
+    {
+        self::$name = $n;
+    }
 }
 
 
@@ -56,10 +56,10 @@ class derived extends base
 // $test = new base("Wow");
 // $test->show();
 
-// echo base::$name; // access properties without obj
-// echo base::show(); // access method without obj
+echo base::$name; // access properties without obj
+echo base::show(); // access method without obj
 
 
-$test = new derived();
-$test->show();
+// $test = new derived();
+// $test->show();
 ?>
