@@ -31,36 +31,40 @@ We can simulate multiple inheritance by using interfaces. -->
 
 - we canot declared Access Modifiers in interfaces.
 - we can declared Access Modifiers in derived Class.
-
 -->
 
 <?php
 
-    interface parent1{
-        function calc($a,$b);
+interface parent1
+{
+    function calc($a, $b);
+}
+
+interface parent2
+{
+    function sub($c, $d);
+}
+
+
+class child implements parent1, parent2
+{
+
+    function calc($a, $b)
+    {
+        echo "<br>" .  ($a + $b);
     }
 
-    interface parent2{
-        function sub($c,$d);
-    }
-
-
-class child implements parent1,parent2{
-
-    function calc($a,$b){
-        echo "<br>".  ($a + $b);
-    }
-
-    function sub($c,$d){
-        echo "<br>".($c - $d);
+    function sub($c, $d)
+    {
+        echo "<br>" . ($c - $d);
     }
 }
 
 $obj = new child();
 
-$obj->calc(10,50);
+$obj->calc(10, 50);
 echo "<br>";
-$obj->sub(1015,50);
+$obj->sub(1015, 50);
 
 
 ?>

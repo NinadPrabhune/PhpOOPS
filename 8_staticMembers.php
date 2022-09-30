@@ -16,7 +16,6 @@ Rules
 
 -->
 
-
 <!-- 
 - after public 
 - use in class self keyword
@@ -29,27 +28,29 @@ Rules
 
 <?php
 
-class base {
-    public static $name ="<br> Parent Class <br>";//Same properties $name
+class base
+{
+    public static $name = "<br> Parent Class <br>"; //Same properties $name
 
-    // public static function show(){
-    //     echo self::$name;
-    // }
+    public static function show()
+    {
+        echo self::$name;
+    }
 
     // public function __construct($n)
     // {
-    //     self::$name=$n;
+    //     self::$name = $n;
     // }
-    
 }
 
 
-class derived extends base{
-    public static function show(){
+class derived extends base
+{
+    public static function show()
+    {
         echo parent::$name;
     }
 }
-
 
 
 // $test = new base("Wow");
@@ -61,5 +62,4 @@ class derived extends base{
 
 $test = new derived();
 $test->show();
-
 ?>
