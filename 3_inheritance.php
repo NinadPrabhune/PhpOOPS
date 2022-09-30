@@ -1,5 +1,4 @@
 <?php
-
 // Create New Class From Base / Parent Class is called Inheritance
 
 // Newly created class called as Derived / Child Class
@@ -21,24 +20,19 @@ class Employee
 
     public function __construct($n, $a, $s)
     {
-
         echo "Employee Constructor";
-
         $this->name = $n;
         $this->age = $a;
         $this->salary = $s;
-
     }
 
     public function info()
     {
-
         echo "<h3> Employee Profile </h3>";
         echo "Employee Name :- " . $this->name . "<br>";
         echo "Employee Age :- " . $this->age . "<br>";
         echo "Employee Salary :- " . $this->salary . "<br><br>";
     }
-
 }
 
 class Manager extends Employee
@@ -51,24 +45,19 @@ class Manager extends Employee
     public function __construct($n, $a, $s)
     {
         echo "Manager Constructor";
-
         $this->name = $n;
         $this->age = $a;
         $this->salary = $s;
-
     }
 
     public function info()
     {
-
         $this->TotalSalary = $this->salary + $this->TrivalAllounce + $this->PhoneAllounce;
-
         echo "<h3> Manager Profile </h3>";
         echo "Employee Name     :- " . $this->name . "<br>";
         echo "Employee Age      :- " . $this->age . "<br>";
         echo "Employee Salary   :- " . $this->TotalSalary . "<br><br>";
     }
-
 }
 
 $e1 = new Employee("Ram", 25, 65000);
@@ -76,8 +65,3 @@ $e1->info();
 
 $m1 = new Manager("Krishna", 35, 150000);
 $m1->info();
-
-
-
-
-
