@@ -6,5 +6,3 @@ class second{
         echo "This is second Class <br>";        
     }
 }
-
-?>
