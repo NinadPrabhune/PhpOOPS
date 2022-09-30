@@ -3,47 +3,42 @@
 
 <?php
 
-class student{
+class student
+{
 
     public $name;
     public $course;
-    
 
-    public function __construct($n) 
+
+    public function __construct($n)
     {
-        $this->name=$n;
-        
+        $this->name = $n;
     }
 
 
-    public function SetCourse(course $c) 
+    public function SetCourse(course $c)
     {
-        $this->course=$c;
-        
+        $this->course = $c;
     }
 
-    public function __clone() 
+    public function __clone()
     {
-        $this->course= clone $this->course; // solution
-        
+        $this->course = clone $this->course; // solution
+
     }
-
-
-
 }
 
-class course{
+class course
+{
 
     public $cname;
 
-    public function __construct($cn) 
+    public function __construct($cn)
     {
-        $this->cname=$cn;
-        
+        $this->cname = $cn;
     }
-
 }
- 
+
 
 
 // case 1
@@ -79,10 +74,7 @@ $student2->name = 'Krishna';
 
 $student2->course->cname = 'Python';
 
-var_dump($student1);  
+var_dump($student1);
 
 var_dump($student2);
-
-
-
 ?>

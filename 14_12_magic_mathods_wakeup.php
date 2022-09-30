@@ -25,14 +25,12 @@ class student
    public function __wakeup()
    {
       echo "This is wakeup Methode ";
-   } 
+   }
 }
 
 $test = new student();
 $test->setName("Ninad", "Prabhune");
-$srl=serialize($test);
-$uns=unserialize($srl);
+$srl = serialize($test);
+$uns = unserialize($srl);
 var_dump($uns);
-
-
 ?>

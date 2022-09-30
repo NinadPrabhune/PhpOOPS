@@ -27,20 +27,22 @@ Priority
 
 -->
 
+<?php
 
+trait hello
+{
 
-  <?php
-
-trait hello{
-
-    public function SayHello(){
+    public function SayHello()
+    {
         echo "Hello From hello Trait <br>";
     }
 }
 
-trait hi{
+trait hi
+{
 
-    public function SayHello(){
+    public function SayHello()
+    {
         echo "Hello From hi Trait <br>";
     }
 }
@@ -58,7 +60,7 @@ trait hi{
 // class child extends base{
 
 //     use hello;
-    
+
 //     public function SayHello(){
 //         echo "Hello From Child Class <br>";
 //     }
@@ -72,20 +74,15 @@ trait hi{
 // 2 Condition
 // collisions Error Same Function
 
-class base{  
-    use hello, hi{
-        hello:: SayHello insteadOf hi;          // Chooseing function
-        hi:: SayHello as NewHellow;             //Rename
+class base
+{
+    use hello, hi {
+        hello::SayHello insteadof hi;          // Chooseing function
+        hi::SayHello as NewHellow;             //Rename
     }
 }
 
-
-$obj1=new base();
+$obj1 = new base();
 $obj1->SayHello();
 $obj1->NewHellow();
-
-
-
-
-
 ?>

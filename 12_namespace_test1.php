@@ -15,5 +15,3 @@
     function wow(){
         echo "Wow from test1 file<br>";
     }
-
-?>

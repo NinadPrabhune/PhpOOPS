@@ -65,6 +65,4 @@ $obj = new child();
 $obj->calc(10, 50);
 echo "<br>";
 $obj->sub(1015, 50);
-
-
 ?>

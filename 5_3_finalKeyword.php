@@ -5,7 +5,8 @@
 
 
 
-final class Fruit {
+final class Fruit
+{
   // some code
 }
 
@@ -16,10 +17,10 @@ final class Fruit {
 
 
 
-
-
-class Fruit1 {
-  final public function intro() {
+class Fruit1
+{
+  final public function intro()
+  {
     // some code
   }
 }
@@ -30,4 +31,3 @@ class Fruit1 {
 //     // some code
 //   }
 // }
-?>

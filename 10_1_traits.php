@@ -1,4 +1,3 @@
-
 <!-- 
     -The traits are used when multiple classes share the same functionality.
 
@@ -26,38 +25,38 @@
  -->
 
 
-
-
 <?php
 
-trait hello{
+trait hello
+{
 
-    public function SayHello(){
+    public function SayHello()
+    {
         echo "Hello Everyone <br>";
     }
 
-    public function SayHi(){
+    public function SayHi()
+    {
         echo "Hi Everyone <br>";
     }
-
-
 }
-trait bye{
+trait bye
+{
 
-    public function SayBye(){
+    public function SayBye()
+    {
         echo "Bye Everyone <br>";
-    }    
-
+    }
 }
 
-class base{
+class base
+{
 
-    use hello,bye;
-
+    use hello, bye;
 }
 
 
-$obj=new base();
+$obj = new base();
 
 $obj->SayHello();
 $obj->SayHi();

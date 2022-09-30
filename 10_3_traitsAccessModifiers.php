@@ -18,13 +18,6 @@ class base{
     }
 }
 
-
 $obj1=new base();
 $obj1->SayHello();
 $obj1->NewHello();
-
-
-
-
-
-?>

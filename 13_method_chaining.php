@@ -31,15 +31,10 @@ class abc{
 
 $test = new abc();
 
-
 $test->First();
 $test->Second();
 $test->Third();
 
 echo " <br> <br>";
 
-
 $test->First()->Second()->Third();
-
-
-?>

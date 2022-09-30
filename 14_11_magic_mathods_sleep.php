@@ -22,14 +22,12 @@ class student
 
    public function __sleep()
    {
-      return array("first_name","last_name");
-   } 
+      return array("first_name", "last_name");
+   }
 }
 
 $test = new student();
 $test->setName("Ninad", "Prabhune");
-$srl=serialize($test);
+$srl = serialize($test);
 var_dump($srl);
-
-
 ?>

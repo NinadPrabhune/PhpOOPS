@@ -26,9 +26,8 @@ class abc{
     }
 }
 
+
 $test = new abc();
 $test->First();
 $test->First();
 $test->First();
-?>
-

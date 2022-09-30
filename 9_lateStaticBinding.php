@@ -8,16 +8,14 @@
     you use the static keyword that references an exact class that is called at runtime.
 -->
 
-
-
 <?php
 
 class Model
 {
-	protected static $tableName = 'Model';
+    protected static $tableName = 'Model';
 
-	public function getTableName()          // u can write static      
-	{
+    public function getTableName()          // u can write static      
+    {
         echo "<br>";
         echo "<br>";
         echo self::$tableName;
@@ -25,22 +23,22 @@ class Model
         echo static::$tableName;
 
         // return self::$tableName;         // return Model
-		//return static::$tableName;          // *return user
-	}
+        //return static::$tableName;          // *return user
+    }
 }
 
 class User extends Model
 {
-	protected static $tableName = 'User';
+    protected static $tableName = 'User';
 }
 
-$res= new Model();
-$rs=$res->getTableName();
+$res = new Model();
+$rs = $res->getTableName();
 // var_dump($rs);
 
 
-$res1= new User();
-$rs1=$res1->getTableName();
+$res1 = new User();
+$rs1 = $res1->getTableName();
 // var_dump($rs1);
 
 //echo User::getTableName(); // User

@@ -8,11 +8,11 @@
 class calculation
 {
 
-   public $a,$b;
-   
-   public function __construct($a,$b)
+   public $a, $b;
+
+   public function __construct($a, $b)
    {
-      
+
       $this->a = $a;
       $this->b = $b;
    }
@@ -26,7 +26,7 @@ class calculation
    public function __invoke()
    {
       echo $this->a + $this->b; // case 2
-   } 
+   }
 }
 
 
@@ -40,9 +40,8 @@ class calculation
 
 // Case 2
 
-$test = new calculation(20,50);
+$test = new calculation(20, 50);
 // $test->sum();
 
 $test(); // error fatal
-
 ?>

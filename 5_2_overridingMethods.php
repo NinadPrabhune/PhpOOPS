@@ -26,7 +26,3 @@ echo $find->calculation(10,5); // derived class use
 $find=new base();
 echo $find->name; // base class use
 echo $find->calculation(10,5); // base class use
-
-
-
-?>

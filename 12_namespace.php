@@ -1,4 +1,3 @@
-
 <!-- same class name in files want to include in one file is not possible. 
 with the help of namespace we achive this. 
 rule 
@@ -25,11 +24,10 @@ require "12_namespace_test1.php";
 
 require "12_namespace_test2.php";
 
-function wow(){
+function wow()
+{
     echo "Wow from index file<br>";
 }
-
-
 
 
 $obj = new namespace1\product();
@@ -39,7 +37,4 @@ $obj = new namespace2\product();
 
 wow();
 namespace1\wow();
-
-
-
 ?>

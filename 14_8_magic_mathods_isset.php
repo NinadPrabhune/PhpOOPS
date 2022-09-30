@@ -1,4 +1,3 @@
-
 <!-- 
     return 1 OR 0
 
@@ -12,27 +11,27 @@
 <?php
 
 
-class student{
+class student
+{
 
-    public $course;
-    private $first_name;
-    private $last_name;
+   public $course;
+   private $first_name;
+   private $last_name;
 
-    public function setName($fname,$lname){
-         $this->first_name=$fname."<br>";
-         $this->last_name=$lname."<br>";
-    } 
+   public function setName($fname, $lname)
+   {
+      $this->first_name = $fname . "<br>";
+      $this->last_name = $lname . "<br>";
+   }
 
-    public function __isset($property)
-    {
-       
-           echo isset($this->$property)."<br>";
-    }
-    
-    
+   public function __isset($property)
+   {
+
+      echo isset($this->$property) . "<br>";
+   }
 }
-   
-   $test = new student();
+
+$test = new student();
 
 
 //    $test->course='PHP';
@@ -40,15 +39,14 @@ class student{
 
 
 //    $test->setName("Ninad", "Prabhune"); 
-   
-   
-   echo isset($test->first_name);
-   echo isset($test->last_name);
 
 
-   
+echo isset($test->first_name);
+echo isset($test->last_name);
+
+
+
 //     echo "<pre>";
 //     print_r($test);
 //     echo "</pre>";
-
 ?>

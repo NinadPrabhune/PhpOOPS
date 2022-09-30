@@ -1,4 +1,5 @@
 <?php
+
 namespace MyNamespace;  // Nmaespace Declaration
 /* Magic Constants
 
@@ -22,46 +23,51 @@ ClassName::class
 
 All of the constants are resolved at compile-time instead of run time, unlike the regular constant. Magic constants are case-insensitive.*/
 
-    echo " Line No. : " . __LINE__."<br><br>";
-    echo " File Full Path : " . __FILE__."<br><br>";
-    echo " Directiory : " . __DIR__."<br><br>";
-    echo " The Function name is  : " . __FUNCTION__."<br><br>";  
+echo " Line No. : " . __LINE__ . "<br><br>";
+echo " File Full Path : " . __FILE__ . "<br><br>";
+echo " Directiory : " . __DIR__ . "<br><br>";
+echo " The Function name is  : " . __FUNCTION__ . "<br><br>";
 
-    function MyFun(){
+function MyFun()
+{
 
-        echo " The Function name is  : " . __FUNCTION__."<br><br>";
-    }
+    echo " The Function name is  : " . __FUNCTION__ . "<br><br>";
+}
 
-    MyFun();
+MyFun();
 //---------------------------------------------
-    class MyClass{
+class MyClass
+{
 
-        function getClassName(){
+    function getClassName()
+    {
 
-            echo " The Class name is  : " . __CLASS__."<br><br>";
+        echo " The Class name is  : " . __CLASS__ . "<br><br>";
 
-            echo " The Method name is  : " . __METHOD__."<br><br>";
+        echo " The Method name is  : " . __METHOD__ . "<br><br>";
 
-            echo " The Namespace name is  : " . __NAMESPACE__."<br><br>";    
-        }
+        echo " The Namespace name is  : " . __NAMESPACE__ . "<br><br>";
     }
+}
 
-    $obj = new MyClass();
-    echo $obj->getClassName();
+$obj = new MyClass();
+echo $obj->getClassName();
 //---------------------------------------------
-    trait MyTrait{
+trait MyTrait
+{
 
-        function getTraitName(){
+    function getTraitName()
+    {
 
-            echo " The Trait name is  : " . __TRAIT__."<br><br>";    
-        }
+        echo " The Trait name is  : " . __TRAIT__ . "<br><br>";
     }
+}
 
-    class MyClass1{
+class MyClass1
+{
 
-        Use MyTrait;
-    }
+    use MyTrait;
+}
 
-    $obj1 = new MyClass1();
-    echo $obj1->getTraitName();
-?>
+$obj1 = new MyClass1();
+echo $obj1->getTraitName();

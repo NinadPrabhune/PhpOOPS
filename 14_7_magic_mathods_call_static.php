@@ -1,4 +1,3 @@
-
 <!-- when you r trying to Call Non existing  or private Static Function directely outside class in give 
 undefined Method / fatal error message  -->
 <!-- to avoide this  error massage we  use __Clall method -->
@@ -11,25 +10,26 @@ undefined Method / fatal error message  -->
 <?php
 
 
-class student{
+class student
+{
 
-    
 
-    private static function hello(){
+
+    private static function hello()
+    {
 
         echo "This is Private static Method";
-    } 
-    
-    public static function __callstatic($method, $args){       
+    }
 
-        if(method_exists(__class__,$method)){
-            call_user_func_array([__class__,$method],$args);
-        }else{
-            echo " Method Doesnot Exist- '".$method."' <br>";
+    public static function __callstatic($method, $args)
+    {
+
+        if (method_exists(__class__, $method)) {
+            call_user_func_array([__class__, $method], $args);
+        } else {
+            echo " Method Doesnot Exist- '" . $method . "' <br>";
         }
-    }   
+    }
 }
-   student::hello();
-   
-
+student::hello();
 ?>

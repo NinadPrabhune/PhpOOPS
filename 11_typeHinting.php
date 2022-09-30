@@ -7,15 +7,15 @@ In PHP, we can use type hinting for Object, Array and callable data type. -->
 
 <?php
 
-function Fruits(array $name){  //type Hinting
+function Fruits(array $name)
+{  //type Hinting
 
-    foreach($name as $name_rec){
-            echo $name_rec."<br>";
+    foreach ($name as $name_rec) {
+        echo $name_rec . "<br>";
     }
 }
 
-$test=["Ninad","Ninad1","Ninad2"];
+$test = ["Ninad", "Ninad1", "Ninad2"];
 //$test="Ninad";
 Fruits($test);
-
 ?>

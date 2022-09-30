@@ -42,7 +42,3 @@ class abc{
 }
 
 $test = new abc();
-
-
-?>
-

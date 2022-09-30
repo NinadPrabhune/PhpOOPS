@@ -1,16 +1,13 @@
 <?php
 
+namespace namespace2;
 
-    namespace namespace2;
+class product
+{
 
-    class product {
+    public function __construct()
+    {
 
-    public function __construct(){
-
-            echo "This is product Class 2<br>";
-
+        echo "This is product Class 2<br>";
     }
-
-    }
-
-?>
+}

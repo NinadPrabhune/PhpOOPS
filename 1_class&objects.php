@@ -1,5 +1,4 @@
 <?php
-
 // A class is a template for objects, and an object is an instance of class.
 
 // In a class, variables are called properties and functions are called methods!
@@ -41,7 +40,7 @@ echo $cal2->Sum() . "<br>";
 echo $cal2->Sub() . "<br>";
 
 
-$cal123='';
+$cal123 = '';
 
 var_dump($cal1 instanceof Calculation);
 var_dump($cal123 instanceof Calculation);

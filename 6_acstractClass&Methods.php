@@ -23,29 +23,29 @@ condition 3
 
 <?php
 
-abstract class ParentClass{
+abstract class ParentClass
+{
 
     public $name;
 
-    abstract protected function calc($a,$b);
-
+    abstract protected function calc($a, $b);
 }
-class ChildClass extends ParentClass{
+class ChildClass extends ParentClass
+{
 
-    public function calc($c,$d){
+    public function calc($c, $d)
+    {
         echo $c + $d;
     }
 }
-
-
 
 // $test= new ParentClass(); //Error
 
 
 
-$test1= new ChildClass();
+$test1 = new ChildClass();
 
-$test1->calc(10,20);
+$test1->calc(10, 20);
 
 
 
@@ -58,9 +58,4 @@ $test1->calc(10,20);
 
 // bank IdProff Function
 
-
-
-
 ?>
-
-
