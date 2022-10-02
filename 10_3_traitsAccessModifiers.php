@@ -1,16 +1,17 @@
 <?php
 
-trait hello{
+trait hello
+{
 
-    private function SayHello(){
+    private function SayHello()
+    {
         echo "Hello From hello Trait <br>";
     }
 }
 
-
-
-class base{  
-    use hello{
+class base
+{
+    use hello {
         hello::SayHello as public;  // Change Access Modifiers
         hello::SayHello as public NewHello;  // Change Access Modifiers with Rename
 
@@ -18,6 +19,6 @@ class base{
     }
 }
 
-$obj1=new base();
+$obj1 = new base();
 $obj1->SayHello();
 $obj1->NewHello();

@@ -2,17 +2,16 @@
 
 Inheritance has four types, 
 
--Single Inheritance         (B->A)
--Multilevel Inheritance     (A->B->C)
--Hierarchical Inheritance   (B->A, C->A)
--Multiple Inheritance       (Not Possible in PHP but simulate multiple inheritance by using "interfaces")
+-Single Inheritance         (P->C)
+-Multilevel Inheritance     (P->C1->C2)
+-Hierarchical Inheritance   (P->C1, P->C2, P->C3)
+-Multiple Inheritance       (P1->C1, P2->C1)(Not Possible in PHP but simulate multiple inheritance by using "interfaces")
 
 PHP supports only single inheritance, where only one class can be derived from single parent class.
 
 We can simulate multiple inheritance by using interfaces. -->
 
 <!-- interfaces used for security Perpose -->
-
 
 <!-- Rules of interfaces
 

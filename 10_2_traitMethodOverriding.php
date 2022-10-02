@@ -1,6 +1,7 @@
 <!--  
     
 PHP trait’s method conflict resolution
+
 Overriding trait method
 
     -Same Function name in diffrent Class
