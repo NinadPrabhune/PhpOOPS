@@ -23,7 +23,7 @@ Note
 
 Priority
 - 1) child Class 
-- 2) Trair class
+- 2) Trait class
 - 3) base / parent Class
 
 -->
