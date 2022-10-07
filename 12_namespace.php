@@ -4,17 +4,9 @@ rule
 
 1) write namespace on first line of both file. 
 
-2) write namespace without space. 3) access obj with namespace name \ class name.
+2) write namespace without space. 
 
-same class name in files want to include in one file is not possible.
-
-with the help of namespace we achive this.
-
-rule
-
-1) write namespace on first line of both file.
-2) write namespace without space.
-3) access obj with namespace name \ class name. -->
+3) access obj with namespace name \ class name.
 
 
 

@@ -20,10 +20,10 @@ class Model
         echo "<br>";
         echo self::$tableName;
         echo "<br>";
-        echo static::$tableName;
+        echo static::$tableName;            //It will reference the class that is called at runtime.
 
         // return self::$tableName;         // return Model
-        //return static::$tableName;          // *return user
+        //return static::$tableName;          // *return User
     }
 }
 

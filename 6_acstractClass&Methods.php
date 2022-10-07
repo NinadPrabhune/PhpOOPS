@@ -11,7 +11,6 @@ condition 2
 condition 3
 - in a Abstract Classes, abstract Methods must have "implement in derived class".
 
-
 - Abstract meance Uncomplete
 
 - we cannot create object of abstract Class
